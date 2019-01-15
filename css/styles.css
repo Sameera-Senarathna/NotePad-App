@@ -1,6 +1,7 @@
 .inputNoBoarder {
   border: none;
   margin-bottom: 0px !important;
+  background-color: white !important;
 }
 
 .btn {
@@ -15,6 +16,24 @@
 .smallBtn {
   display: flex;
   align-items: center;
+}
+
+.noPadding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.onlyLeftPadding {
+  padding-left: 30px;
+  padding-right: 0px;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+hr {
+  margin: 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */
