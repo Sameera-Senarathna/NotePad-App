@@ -36,4 +36,13 @@ hr {
   margin: 0px;
 }
 
+.container-fluid {
+  margin-top: 10px;
+}
+
+.test {
+  width: 20%;
+  border: 1px solid black;
+}
+
 /*# sourceMappingURL=styles.css.map */
