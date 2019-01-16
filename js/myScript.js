@@ -38,15 +38,35 @@ $("#closeBtn").click(function () {
 
     var title = $("#title").val();
 
-    var titleHtml = `
-                        <div class="item card shadow p-3 mb-5 bg-white rounded">
+    var titleHtml = `<div class="item card shadow p-3 mb-5 bg-white rounded">
                             <div class="input-group mb-3 inputNoBoarder">
                                 <input type="text" class="form-control inputNoBoarder"value="${title}">
                             </div>
-                        </div>                   
                         `;
 
-    $(".packery").append(titleHtml);
+    $("#lineitemlist").find(".col-10 input").each(function () {
 
-    console.log("Title is :" + title);
+        var todoItem = $(this).val();
+
+        titleHtml = titleHtml + `  <div class="row">
+            <div class="col-2 smallBtn noPadding">
+                <span class="input-group-text onlyLeftPadding"><input type="checkbox"></span>
+            </div>
+            <div class="col-10 noPadding input-group-sm">
+                <input value="${todoItem}" type="text" class="form-control inputNoBoarder noPadding">
+            </div>
+        </div>`;
+
+    });
+
+    titleHtml = titleHtml + '</div>';
+
+    var $titleHtml = $(titleHtml);
+
+    $container.append( $titleHtml ).packery( 'appended', $titleHtml );
+    $titleHtml.each( makeEachDraggable );
+
+    $("#title").val("");
+    $("#lineitemlist").children().remove();
+
 });
