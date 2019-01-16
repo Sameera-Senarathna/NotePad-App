@@ -41,7 +41,6 @@ hr {
 }
 
 .test{
-  width: 20%;
   border: 1px solid black;
 }
 
@@ -49,3 +48,28 @@ hr {
   margin: 0px;
   padding :0px;
 }
+
+ //--------------------------------------------------------------------
+
+.packery {
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.item {
+  width: 20%;
+  height: 40px;
+  float: left;
+  background: #C09;
+  margin: 2px;
+}
+
+.item:hover {
+  cursor: move;
+}
+
+
+
+

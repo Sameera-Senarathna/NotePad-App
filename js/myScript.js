@@ -1,5 +1,5 @@
 $("#items").keydown(function (event) {
-    if(event.keyCode==13){
+    if (event.keyCode == 13) {
         var enteredText = $(this).val();
         var append = `<div class="row">
                         <div class="col-1 smallBtn noPadding">
@@ -15,6 +15,38 @@ $("#items").keydown(function (event) {
 
         $("#lineitemlist").append(append);
         $(this).val("");
-        console.log("The Word You Enter is :"+enteredText);
+        console.log("The Word You Enter is :" + enteredText);
     }
+});
+
+var $container = $('.packery');
+
+$container.packery({
+    columnWidth: 10,
+    //rowHeight: 80
+});
+$container.find('.item').each(makeEachDraggable);
+
+function makeEachDraggable(i, itemElem) {
+    // make element draggable with Draggabilly
+    var draggie = new Draggabilly(itemElem);
+    // bind Draggabilly events to Packery
+    $container.packery('bindDraggabillyEvents', draggie);
+}
+
+$("#closeBtn").click(function () {
+
+    var title = $("#title").val();
+
+    var titleHtml = `
+                        <div class="item card shadow p-3 mb-5 bg-white rounded">
+                            <div class="input-group mb-3 inputNoBoarder">
+                                <input type="text" class="form-control inputNoBoarder"value="${title}">
+                            </div>
+                        </div>                   
+                        `;
+
+    $(".packery").append(titleHtml);
+
+    console.log("Title is :" + title);
 });
