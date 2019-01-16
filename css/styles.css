@@ -45,4 +45,9 @@ hr {
   border: 1px solid black;
 }
 
+.noMargin {
+  margin: 0px;
+  padding: 0px;
+}
+
 /*# sourceMappingURL=styles.css.map */
