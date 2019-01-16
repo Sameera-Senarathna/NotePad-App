@@ -63,10 +63,18 @@ $("#closeBtn").click(function () {
 
     var $titleHtml = $(titleHtml);
 
-    $container.append( $titleHtml ).packery( 'appended', $titleHtml );
-    $titleHtml.each( makeEachDraggable );
+    $container.append($titleHtml).packery('appended', $titleHtml);
+    $titleHtml.each(makeEachDraggable);
 
     $("#title").val("");
     $("#lineitemlist").children().remove();
 
+});
+
+$(".colorDiv").mouseover(function () {
+    $("#colorPicker").css("display","block");
+});
+
+$(".colorDiv").mouseleave(function () {
+    $("#colorPicker").css("display","none");
 });

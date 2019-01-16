@@ -49,6 +49,91 @@ hr {
   padding: 0px;
 }
 
+.colorDiv {
+  position: relative;
+}
+
+#colorPicker {
+  position: absolute;
+  left: -130px;
+  top: 30px;
+  width: 170px;
+  height: 170px;
+  background-color: #9fcdff;
+}
+
+#red {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#blue {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#yellow {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#green {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#brown {
+  width: 50px;
+  height: 50px;
+  background-color: #533f03;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#purpul {
+  width: 50px;
+  height: 50px;
+  background-color: #6610f2;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#orange {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#pink {
+  width: 50px;
+  height: 50px;
+  background-color: #CC0099;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#aqua {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  display: inline-block;
+  border-radius: 50%;
+}
+
 .packery {
   max-width: 100%;
   padding-left: 20px;
